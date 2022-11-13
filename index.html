@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Guessing Game</title>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Guessing game start -->
+
+    <div class="container">
+      <div class="guessing-game">
+        <div class="game">
+          <h1>Guessing Game</h1>
+          <form action="#">
+            <label for="guessing-game"
+              >Enter number between <b>1</b> to <b>5</b> <b>:</b>
+            </label>
+            <br />
+            <input
+              type="number"
+              name="guessing-game"
+              id="guessing-input"
+              min="1"
+              max="5"
+              required
+            />
+            <button id="button" type="submit">Submit</button>
+          </form>
+          <p class="result-number"></p>
+          <p class="attempt-number"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Guessing game end -->
+
+    <!-- javascript file -->
+    <script src="./script.js"></script>
+  </body>
+</html>
